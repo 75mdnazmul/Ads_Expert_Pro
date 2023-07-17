@@ -6,7 +6,7 @@ const AboutUs = () => {
         <section className="section about" id="about" aria-label="about">
             <div className="container">
 
-                <div className="about-banner img-holder" style={{"--width": 720, "--height": 960}}>
+                <div className="about-banner img-holder" style={{"--width": 720, "--height": 960}}  data-aos="zoom-in">
                     <img src={aboutImg} width="720" height="960" loading="lazy" alt="about banner"
                         className="img-cover"/>
 
@@ -17,25 +17,25 @@ const AboutUs = () => {
 
                 <div className="about-content">
 
-                    <h2 className="h2 section-title">About Us</h2>
+                    <h2 className="h2 section-title" data-aos="zoom-in">About Us</h2>
 
-                    <p className="section-text">
+                    <p className="section-text" data-aos="fade-left">
                         Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc
                         tinci dunt nec
                         elei fend et tiram.
                     </p>
 
-                    <h3 className="h3">Who We Are</h3>
+                    <h3 className="h3" data-aos="fade-up">Who We Are</h3>
 
-                    <p className="section-text">
+                    <p className="section-text" data-aos="fade-up">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
                         rem aperiam,
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                     </p>
 
-                    <h3 className="h3">Our Success</h3>
+                    <h3 className="h3" data-aos="fade-up">Our Success</h3>
 
-                    <ul className="about-list">
+                    <ul className="about-list"  data-aos="fade-up">
 
                         <li className="about-item">
                             <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
@@ -67,9 +67,9 @@ const AboutUs = () => {
 
                     </ul>
 
-                    <h3 className="h3">Our Mission</h3>
+                    <h3 className="h3" data-aos="fade-up">Our Mission</h3>
 
-                    <p className="section-text">
+                    <p className="section-text" data-aos="fade-up">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                         atque corrupti
                         quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in.

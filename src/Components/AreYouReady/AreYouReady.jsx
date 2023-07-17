@@ -3,7 +3,7 @@ import React from 'react';
 const AreYouReady = () => {
     return (
         <section className="section cta" aria-label="cta" style={{"backgroundImage": "url('./assets/images/cta-bg.jpg')"}}>
-            <div className="container">
+            <div className="container" data-aos="zoom-in">
 
                 <p className="cta-subtitle">So What is Next?</p>
 

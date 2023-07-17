@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll'
 
 const Navber = () => {
     return (
@@ -6,37 +7,38 @@ const Navber = () => {
             <header className="header" data-header>
                 <div className="container">
 
-                    <a href="#" className="logo">AdsExpertPro</a>
+                    
+                    <Link to="home" spy={true} smooth={true} duration={700} ><a className="logo" data-aos="zoom-in">AdsExpertPro</a></Link>
 
                     <nav className="navbar container" data-navbar>
                         <ul className="navbar-list">
 
-                            <li>
-                                <a href="#home" className="navbar-link" data-nav-link>Home</a>
+                            <li data-aos="fade-left">
+                                <Link to="home" spy={true} smooth={true} duration={700} className="navbar-link" data-nav-link>Home</Link>
                             </li>
 
-                            <li>
-                                <a href="#service" className="navbar-link" data-nav-link>Services</a>
+                            <li data-aos="fade-left">
+                                <Link to="service" spy={true} smooth={true} duration={700} className="navbar-link" data-nav-link>Services</Link>
                             </li>
 
-                            <li>
-                                <a href="#project" className="navbar-link" data-nav-link>Project</a>
+                            <li data-aos="fade-left">
+                                <Link to="project" spy={true} smooth={true} duration={700} className="navbar-link" data-nav-link>Project</Link>
                             </li>
 
-                            <li>
-                                <a href="#about" className="navbar-link" data-nav-link>About Us</a>
+                            <li data-aos="fade-left">
+                                <Link to="about" spy={true} smooth={true} duration={700} className="navbar-link" data-nav-link>About Us</Link>
                             </li>
 
-                            <li>
-                                <a href="#blog" className="navbar-link" data-nav-link>Blog</a>
+                            <li data-aos="fade-left">
+                                <Link to="blog" spy={true} smooth={true} duration={700} className="navbar-link" data-nav-link>Blog</Link>
                             </li>
 
-                            <li>
-                                <a href="#contact" className="navbar-link" data-nav-link>Contact Us</a>
+                            <li data-aos="fade-left">
+                                <Link to="contact" spy={true} smooth={true} duration={700} className="navbar-link" data-nav-link>Contact Us</Link>
                             </li>
 
-                            <li>
-                                <a href="#" className="btn btn-primary">Get Started</a>
+                            <li data-aos="fade-left">
+                                <Link to="contact" spy={true} smooth={true} duration={700} className="btn btn-primary" data-nav-link>Get Started</Link>
                             </li>
 
                         </ul>

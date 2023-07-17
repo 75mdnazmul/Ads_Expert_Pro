@@ -208,6 +208,7 @@ body {
   padding: 10px 30px;
   border-radius: var(--radius-5);
   transition: var(--transition-1);
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -316,6 +317,7 @@ body {
   font-size: 3.5rem;
   font-weight: var(--fw-700);
   line-height: 1;
+  cursor: pointer;
 }
 
 .nav-toggle-btn {
@@ -391,7 +393,7 @@ body {
 \*=======================================================================*/
 
 .Banner {
-  padding-block-start: calc(var(--section-padding) + 50px);
+  padding-block-start: calc(var(--section-padding) + 30px);
   text-align: center;
 }
 
@@ -438,12 +440,16 @@ body {
   background-color: var(--white-1);
   padding: 20px 15px;
   border: 1px solid var(--platinum);
-  border-radius: var(--radius-5);
+  border-radius: 16px;
   text-align: center;
   box-shadow: var(--shadow-1);
   transition: var(--transition-2);
-  width: 350px;
-  height: 300px;
+  height: 320px;
+}
+
+.service-card:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform: scale(1.03) !important;
 }
 
 .service-card:is(:hover, :focus-within) {
@@ -722,9 +728,9 @@ body {
 .input-field {
   background-color: var(--white-2);
   color: var(--eerie-black);
-  font-size: var(--fs-5);
-  padding: 15px;
-  border-radius: var(--radius-2);
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 10px;
   outline: 1px solid transparent;
   outline-offset: 0;
   margin-block-end: 15px;
@@ -791,6 +797,11 @@ textarea.input-field {
   min-width: 100%;
 }
 
+.contact-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.03) !important;
+}
+
 .contact-card {
   background-color: var(--white-1);
   padding: 20px;
@@ -799,15 +810,18 @@ textarea.input-field {
   display: flex;
   align-items: flex-start;
   gap: 15px;
+
 }
 
 .contact-card .card-icon {
   background-color: var(--cultured-2);
   color: var(--red-crayola);
   font-size: 25px;
-  padding: 13px;
-  border-radius: 50%;
+  padding: 11px 14px;
+  border-radius: 60%;
   transition: var(--transition-1);
+  width: 60px;
+  height: 60px;
 }
 
 .contact-card:is(:hover, :focus) .card-icon {
@@ -928,6 +942,9 @@ textarea.input-field {
     gap: 10px;
   }
 
+  .blog-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 
 
   /**
@@ -1097,6 +1114,10 @@ textarea.input-field {
     display: flex;
     align-items: center;
     gap: 30px;
+  }
+
+  .navbar-list li {
+    cursor: pointer;
   }
 
   .navbar-link {
@@ -1393,9 +1414,10 @@ textarea.input-field {
     gap: 20px;
   }
 
+  /* 
   .contact-card .card-icon {
     padding: 15px;
-  }
+  } */
 
 }
 

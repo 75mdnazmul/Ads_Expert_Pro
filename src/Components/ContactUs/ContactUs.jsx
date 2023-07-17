@@ -1,19 +1,20 @@
 import React from 'react';
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneSquareAlt } from 'react-icons/fa';
 
 const ContactUs = () => {
     return (
         <section className="section contact" id="contact" aria-label="contact">
             <div className="container">
 
-                <h2 className="h2 section-title">Let&apos;s Contact With Us</h2>
+                <h2 className="h2 section-title" data-aos="zoom-in">Let&apos;s Contact With Us</h2>
 
-                <p className="section-text">
+                <p className="section-text" data-aos="fade-left">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna
                     aliqua.
                 </p>
 
-                <form action="" className="contact-form">
+                <form action="" className="contact-form"  data-aos="zoom-in">
 
                     <div className="input-wrapper">
                         <input type="text" name="name" aria-label="name" placeholder="Your name*" required className="input-field" />
@@ -23,9 +24,9 @@ const ContactUs = () => {
                     </div>
 
                     <div className="input-wrapper">
-                        <input type="text" name="subject" aria-label="subject" placeholder="Subject" className="input-field"/>
+                        <input type="text" name="subject" aria-label="subject" placeholder="Subject" className="input-field" />
 
-                            <input type="number" name="phone" aria-label="phone" placeholder="Phone number" className="input-field" />
+                        <input type="number" name="phone" aria-label="phone" placeholder="Phone number" className="input-field" />
                     </div>
 
                     <textarea name="message" aria-label="message" placeholder="Your message...*" required
@@ -46,11 +47,11 @@ const ContactUs = () => {
 
                 <ul className="contact-list">
 
-                    <li className="contact-item">
+                    <li className="contact-item" data-aos="flip-right">
                         <div className="contact-card">
 
                             <div className="card-icon">
-                                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                                <span><FaEnvelope /></span>
                             </div>
 
                             <div className="card-content">
@@ -65,11 +66,11 @@ const ContactUs = () => {
                         </div>
                     </li>
 
-                    <li className="contact-item">
+                    <li className="contact-item" data-aos="flip-right">
                         <div className="contact-card">
 
                             <div className="card-icon">
-                                <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                                <FaMapMarkerAlt />
                             </div>
 
                             <div className="card-content">
@@ -86,11 +87,11 @@ const ContactUs = () => {
                         </div>
                     </li>
 
-                    <li className="contact-item">
+                    <li className="contact-item" data-aos="flip-right">
                         <div className="contact-card">
 
                             <div className="card-icon">
-                                <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+                                <FaPhoneSquareAlt/>
                             </div>
 
                             <div className="card-content">

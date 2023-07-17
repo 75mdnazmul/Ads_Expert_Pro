@@ -1,23 +1,24 @@
 import React from 'react';
+import { FaSearchengin } from "react-icons/fa";
 
 const Services = () => {
     return (
         <section className="section service" id="service" aria-label="service">
             <div className="container">
 
-                <h2 className="h2 section-title">We Provide</h2>
+                <h2 className="h2 section-title" data-aos="zoom-in">We Provide</h2>
 
-                <p className="section-text">
+                <p className="section-text" data-aos="fade-left">
                     With our expertise and commitment to results, we empower businesses to thrive in the competitive digital landscape.
                 </p>
 
                 <ul className="grid-list">
 
                     <li>
-                        <div className="service-card">
+                        <div className="service-card" data-aos="flip-left">
 
                             <div className="card-icon" style={{ backgroundColor: "#13c4a1" }}>
-                                <ion-icon name="chatbox"></ion-icon>
+                                <FaSearchengin />
                             </div>
 
                             <h3 className="h3">
@@ -32,10 +33,10 @@ const Services = () => {
                     </li>
 
                     <li>
-                        <div className="service-card">
+                        <div className="service-card" data-aos="flip-left">
 
                             <div className="card-icon" style={{ backgroundColor: "#6610f2" }}>
-                                <ion-icon name="desktop"></ion-icon>
+                                <FaSearchengin />
                             </div>
 
                             <h3 className="h3">
@@ -50,7 +51,7 @@ const Services = () => {
                     </li>
 
                     <li>
-                        <div className="service-card">
+                        <div className="service-card" data-aos="flip-left">
 
                             <div className="card-icon" style={{ backgroundColor: '#fc3549' }}>
                                 <ion-icon name="phone-portrait"></ion-icon>
@@ -68,7 +69,7 @@ const Services = () => {
                     </li>
 
                     <li>
-                        <div className="service-card">
+                        <div className="service-card" data-aos="flip-right">
 
                             <div className="card-icon" style={{ backgroundColor: "#ffb700" }}>
                                 <ion-icon name="bulb"></ion-icon>
@@ -87,7 +88,7 @@ const Services = () => {
 
 
                     <li>
-                        <div className="service-card">
+                        <div className="service-card" data-aos="flip-right">
 
                             <div className="card-icon" style={{ backgroundColor: "#00d280" }}>
                                 <ion-icon name="archive"></ion-icon>
@@ -105,7 +106,7 @@ const Services = () => {
                     </li>
 
                     <li>
-                        <div className="service-card">
+                        <div className="service-card" data-aos="flip-right">
 
                             <div className="card-icon" style={{ backgroundColor: "#ff612f" }}>
                                 <ion-icon name="build"></ion-icon>
@@ -118,7 +119,6 @@ const Services = () => {
                             <p className="card-text">
                                 We design attractive websites that are easy to use, making your online presence visually appealing and engaging for visitors.
                             </p>
-
                         </div>
                     </li>
 

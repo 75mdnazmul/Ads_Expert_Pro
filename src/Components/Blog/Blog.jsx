@@ -10,9 +10,9 @@ const Blog = () => {
         <section className="section blog" id="blog" aria-label="blog">
             <div className="container">
 
-                <h2 className="h2 section-title">Latest Articles Updated Weekly</h2>
+                <h2 className="h2 section-title" data-aos="zoom-in">Latest Articles Updated Weekly</h2>
 
-                <p className="section-text">
+                <p className="section-text" data-aos="fade-right">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna
                     aliqua.
@@ -23,9 +23,9 @@ const Blog = () => {
                     <li>
                         <div className="blog-card">
 
-                            <figure className="card-banner img-holder" style={{"--width": 860, "--height": 646}}>
+                            <figure className="card-banner img-holder" style={{"--width": 860, "--height": 646}}  data-aos="fade-down-right">
                                 <img src={blogImg1} width="860" height="646" loading="lazy"
-                                    alt="How to Become a Successful Entry Level UX Designer" className="img-cover"/>
+                                    alt="How to Become a Successful Entry Level UX Designer" className="img-cover" />
                             </figure>
 
                             <div className="card-content">
@@ -41,7 +41,7 @@ const Blog = () => {
                         </div>
                     </li>
 
-                    <li>
+                    <li  data-aos="fade-left">
                         <div className="blog-card grid">
 
                             <figure className="card-banner img-holder" style={{"--width": 860, "--height": 646}}>
@@ -62,7 +62,7 @@ const Blog = () => {
                         </div>
                     </li>
 
-                    <li>
+                    <li  data-aos="fade-left">
                         <div className="blog-card grid">
 
                             <figure className="card-banner img-holder" style={{"--width": 860, "--height": 646}}>
@@ -83,7 +83,7 @@ const Blog = () => {
                         </div>
                     </li>
 
-                    <li>
+                    <li  data-aos="fade-left">
                         <div className="blog-card grid">
 
                             <figure className="card-banner img-holder" style={{"--width": 860, "--height": 646}}>
@@ -104,7 +104,7 @@ const Blog = () => {
                         </div>
                     </li>
 
-                    <li>
+                    <li  data-aos="fade-left">
                         <div className="blog-card grid">
 
                             <figure className="card-banner img-holder" style={{"--width": 860, "--height": 646}}>

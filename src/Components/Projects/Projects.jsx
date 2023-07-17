@@ -11,9 +11,9 @@ const Projects = () => {
         <section className="section project" id="project" aria-label="project">
             <div className="container">
 
-                <h2 className="h2 section-title">Our Recent Projects</h2>
+                <h2 className="h2 section-title" data-aos="zoom-in">Our Recent Projects</h2>
 
-                <p className="section-text">
+                <p className="section-text" data-aos="fade-right">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna
                     aliqua.
@@ -22,7 +22,7 @@ const Projects = () => {
                 <ul className="grid-list">
 
                     <li>
-                        <div className="project-card">
+                        <div className="project-card" data-aos="zoom-in-right">
 
                             <figure className="card-banner img-holder" style={{ '--width': '510px', '--height': '700px' }}>
                                 <img src={projectsImg1} width="510" height="700" loading="lazy"
@@ -45,7 +45,7 @@ const Projects = () => {
                     </li>
 
                     <li>
-                        <div className="project-card">
+                        <div className="project-card"  data-aos="zoom-in">
 
                             <figure className="card-banner img-holder" style={{ '--width': 510, '--height': 700 }}>
                                 <img src={projectsImg2} width="510" height="700" loading="lazy"
@@ -68,7 +68,7 @@ const Projects = () => {
                     </li>
 
                     <li>
-                        <div className="project-card">
+                        <div className="project-card" data-aos="zoom-in-left">
 
                             <figure className="card-banner img-holder" style={{"--width": 510, "--height": 700}}>
                                 <img src={projectsImg3} width="510" height="700" loading="lazy"
@@ -91,7 +91,7 @@ const Projects = () => {
                     </li>
 
                     <li>
-                        <div className="project-card">
+                        <div className="project-card" data-aos="zoom-in-right">
 
                             <figure className="card-banner img-holder" style={{"--width": 510, "--height": 700}}>
                                 <img src={projectsImg4} width="510" height="700" loading="lazy"
@@ -114,7 +114,7 @@ const Projects = () => {
                     </li>
 
                     <li>
-                        <div className="project-card">
+                        <div className="project-card"  data-aos="zoom-in">
 
                             <figure className="card-banner img-holder" style={{"--width": 510, "--height": 700}}>
                                 <img src={projectsImg5} width="510" height="700" loading="lazy"
@@ -137,7 +137,7 @@ const Projects = () => {
                     </li>
 
                     <li>
-                        <div className="project-card">
+                        <div className="project-card" data-aos="zoom-in-left">
 
                             <figure className="card-banner img-holder" style={{"--width": 510, "--height": 700 }}>
                                 <img src={projectsImg6} width="510" height="700" loading="lazy"
