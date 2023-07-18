@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container">
 
                 <p className="copyright">
-                    &copy; 2022 All Rights Reserved by <a href="#" className="copyright-link">codewithsadee</a>
+                    &copy; 2023 All Rights Reserved by <a href="#" className="copyright-link">codewithnazmul</a>
                 </p>
 
             </div>

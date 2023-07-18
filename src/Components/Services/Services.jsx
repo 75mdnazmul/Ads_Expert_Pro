@@ -1,5 +1,11 @@
 import React from 'react';
 import { FaSearchengin } from "react-icons/fa";
+import serviceImg1 from '../../assets/images/service-1.webp'
+import serviceImg2 from '../../assets/images/service-2.webp'
+import serviceImg3 from '../../assets/images/service-3.webp'
+import serviceImg4 from '../../assets/images/service-4.webp'
+import serviceImg5 from '../../assets/images/service-5.webp'
+import serviceImg6 from '../../assets/images/service-6.webp'
 
 const Services = () => {
     return (
@@ -17,8 +23,8 @@ const Services = () => {
                     <li>
                         <div className="service-card" data-aos="flip-left">
 
-                            <div className="card-icon" style={{ backgroundColor: "#13c4a1" }}>
-                                <FaSearchengin />
+                            <div className="card-icon">
+                                <img src={serviceImg1} alt="" style={{ width: '200px', height: '100px' }} />
                             </div>
 
                             <h3 className="h3">
@@ -35,8 +41,8 @@ const Services = () => {
                     <li>
                         <div className="service-card" data-aos="flip-left">
 
-                            <div className="card-icon" style={{ backgroundColor: "#6610f2" }}>
-                                <FaSearchengin />
+                            <div className="card-icon">
+                                <img src={serviceImg2} alt="" style={{ width: '100px', height: '100px' }} />
                             </div>
 
                             <h3 className="h3">
@@ -53,8 +59,8 @@ const Services = () => {
                     <li>
                         <div className="service-card" data-aos="flip-left">
 
-                            <div className="card-icon" style={{ backgroundColor: '#fc3549' }}>
-                                <ion-icon name="phone-portrait"></ion-icon>
+                            <div className="card-icon">
+                                <img src={serviceImg3} alt="" style={{ width: '100px', height: '100px' }} />
                             </div>
 
                             <h3 className="h3">
@@ -71,8 +77,8 @@ const Services = () => {
                     <li>
                         <div className="service-card" data-aos="flip-right">
 
-                            <div className="card-icon" style={{ backgroundColor: "#ffb700" }}>
-                                <ion-icon name="bulb"></ion-icon>
+                            <div className="card-icon">
+                                <img src={serviceImg4} alt="" style={{ width: '100px', height: '100px' }} />
                             </div>
 
                             <h3 className="h3">
@@ -90,8 +96,8 @@ const Services = () => {
                     <li>
                         <div className="service-card" data-aos="flip-right">
 
-                            <div className="card-icon" style={{ backgroundColor: "#00d280" }}>
-                                <ion-icon name="archive"></ion-icon>
+                            <div className="card-icon">
+                                <img src={serviceImg5} alt="" style={{ width: '100px', height: '100px' }} />
                             </div>
 
                             <h3 className="h3">
@@ -108,8 +114,8 @@ const Services = () => {
                     <li>
                         <div className="service-card" data-aos="flip-right">
 
-                            <div className="card-icon" style={{ backgroundColor: "#ff612f" }}>
-                                <ion-icon name="build"></ion-icon>
+                            <div className="card-icon">
+                                <img src={serviceImg6} alt="" style={{ width: '200px', height: '100px' }} />
                             </div>
 
                             <h3 className="h3">

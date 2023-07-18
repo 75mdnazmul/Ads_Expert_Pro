@@ -17,7 +17,7 @@ const ContactUs = () => {
                 <form action="" className="contact-form"  data-aos="zoom-in">
 
                     <div className="input-wrapper">
-                        <input type="text" name="name" aria-label="name" placeholder="Your name*" required className="input-field" />
+                        <input type="text" name="name" aria-label="name" placeholder="Your full name*" required className="input-field" />
 
                         <input type="email" name="email_address" aria-label="email" placeholder="Email address*" required
                             className="input-field" />

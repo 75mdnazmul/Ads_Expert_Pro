@@ -1,18 +1,19 @@
 import React from 'react';
 import aboutImg from "../../assets/images/about-banner.jpg"
+import { FaCheckCircle, FaPlay } from 'react-icons/fa';
 
 const AboutUs = () => {
     return (
         <section className="section about" id="about" aria-label="about">
             <div className="container">
 
-                <div className="about-banner img-holder" style={{"--width": 720, "--height": 960}}  data-aos="zoom-in">
+                <div className="about-banner img-holder" style={{ "--width": 720, "--height": 960 }} data-aos="zoom-in">
                     <img src={aboutImg} width="720" height="960" loading="lazy" alt="about banner"
-                        className="img-cover"/>
+                        className="img-cover" />
 
-                        <button className="play-btn" aria-label="Play video">
-                            <ion-icon name="play" aria-hidden="true"></ion-icon>
-                        </button>
+                    <button className="play-btn" aria-label="Play video">
+                        <i><FaPlay/></i>
+                    </button>
                 </div>
 
                 <div className="about-content">
@@ -35,10 +36,11 @@ const AboutUs = () => {
 
                     <h3 className="h3" data-aos="fade-up">Our Success</h3>
 
-                    <ul className="about-list"  data-aos="fade-up">
+                    <ul className="about-list" data-aos="fade-up">
 
                         <li className="about-item">
-                            <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                            <i>
+                            <FaCheckCircle name="checkmark-circle" aria-hidden="true"></FaCheckCircle></i>
 
                             <p className="section-text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -46,7 +48,8 @@ const AboutUs = () => {
                         </li>
 
                         <li className="about-item">
-                            <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                            <i>
+                            <FaCheckCircle name="checkmark-circle" aria-hidden="true"></FaCheckCircle></i>
 
                             <p className="section-text">
                                 It is a long established fact that a reader will be distracted by the readable content of a page when
@@ -56,7 +59,8 @@ const AboutUs = () => {
                         </li>
 
                         <li className="about-item">
-                            <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                            <i>
+                            <FaCheckCircle name="checkmark-circle" aria-hidden="true"></FaCheckCircle></i>
 
                             <p className="section-text">
                                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of

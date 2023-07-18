@@ -31,7 +31,7 @@
   --black_10: hsla(0, 0%, 0%, 0.1);
   --black_5: hsla(0, 0%, 0%, 0.05);
   --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 14%, 98%);
+  --white-2: hsl(0, 0%, 96%);
   --black: hsl(0, 0%, 0%);
 
   /**
@@ -121,7 +121,7 @@ label,
 input,
 button,
 textarea,
-ion-icon {
+i {
   display: block;
 }
 
@@ -146,7 +146,7 @@ button {
   cursor: pointer;
 }
 
-ion-icon {
+i {
   pointer-events: none;
 }
 
@@ -371,6 +371,7 @@ body {
   color: var(--eerie-black);
   font-family: var(--ff-league-spartan);
   font-size: var(--fs-4);
+  font-weight: 600;
   line-height: 1.2;
   padding-block: 8px;
   transition: var(--transition-1);
@@ -452,6 +453,11 @@ body {
   transform: scale(1.03) !important;
 }
 
+.service-card:hover .card-title {
+  color: var(--safety-orange);
+  transition: .5s;
+}
+
 .service-card:is(:hover, :focus-within) {
   transform: translateY(-10px);
 }
@@ -461,12 +467,12 @@ body {
   font-size: 25px;
   max-width: max-content;
   margin-inline: auto;
-  padding: 18px;
+  padding: 0;
   border-radius: 50%;
 }
 
 .service-card .card-title {
-  margin-block: 20px 8px;
+  /* margin-block: 20px 8px; */
 }
 
 .service-card .card-text {
@@ -558,9 +564,11 @@ body {
   background-color: var(--white-1);
   color: var(--red-crayola);
   font-size: 32px;
-  padding: 16px;
+  padding: 20px;
   border-radius: 50%;
   animation: pulse 1.5s ease-out infinite;
+  width: 80px;
+  height: 80px;
 }
 
 @keyframes pulse {
@@ -599,7 +607,7 @@ body {
   gap: 5px;
 }
 
-.about-item ion-icon {
+.about-item i {
   color: var(--red-crayola);
   flex-shrink: 0;
   margin-block-start: 2px;
@@ -723,13 +731,14 @@ body {
   border-radius: var(--radius-2);
   margin-block-end: 30px;
   box-shadow: var(--shadow-1);
+  border-radius: 20px;
 }
 
 .input-field {
   background-color: var(--white-2);
   color: var(--eerie-black);
-  font-size: 20px;
-  padding: 12px;
+  font-size: 22px;
+  padding: 10px;
   border-radius: 10px;
   outline: 1px solid transparent;
   outline-offset: 0;
@@ -800,6 +809,7 @@ textarea.input-field {
 .contact-item:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transform: scale(1.03) !important;
+  border-radius: 10px;
 }
 
 .contact-card {
@@ -810,14 +820,14 @@ textarea.input-field {
   display: flex;
   align-items: flex-start;
   gap: 15px;
-
+  border-radius: 10px;
 }
 
 .contact-card .card-icon {
   background-color: var(--cultured-2);
   color: var(--red-crayola);
   font-size: 25px;
-  padding: 11px 14px;
+  padding: 11px 14px !important;
   border-radius: 60%;
   transition: var(--transition-1);
   width: 60px;
@@ -898,17 +908,16 @@ textarea.input-field {
 
 
 
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
+/*=======******===========================#========================******=============*\
+                          MEDIA QUERIES Responsive Part Css
+\*=======******===========================#========================******=============*/
 
 /**
  * responsive for larger than 575px screen
  */
 
 @media (min-width: 575px) {
+
 
   /**
    * REUSED STYLE
@@ -957,7 +966,11 @@ textarea.input-field {
   }
 
   .contact-item {
-    min-width: calc(50% - 18px);
+    min-width: calc(70% - 50px);
+  }
+
+  .contact-card .card-icon {
+    padding: 15px 18px !important;
   }
 
 }
@@ -990,8 +1003,6 @@ textarea.input-field {
     --fs-6: 1.4rem;
 
   }
-
-
 
   /**
    * REUSED STYLE
@@ -1039,7 +1050,7 @@ textarea.input-field {
    */
 
   .contact-form {
-    padding: 30px;
+    /* padding: 30px; */
   }
 
   .contact-item {
@@ -1080,7 +1091,13 @@ textarea.input-field {
 
   }
 
+  /**
+   * HEADER
+   */
 
+  .nav-toggle-btn {
+    display: none;
+  }
 
   /**
    * REUSED STYLE
@@ -1094,15 +1111,6 @@ textarea.input-field {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
-
-  /**
-   * HEADER
-   */
-
-  .nav-toggle-btn {
-    display: none;
-  }
 
   .navbar,
   .navbar.active {
@@ -1284,12 +1292,10 @@ textarea.input-field {
 
   .contact-card .card-icon {
     font-size: 32px;
+    padding: 11px 14px !important;
   }
 
 }
-
-
-
 
 
 /**
@@ -1372,7 +1378,7 @@ textarea.input-field {
     gap: 7px;
   }
 
-  .about-item ion-icon {
+  .about-item i {
     font-size: 20px;
   }
 
@@ -1414,10 +1420,10 @@ textarea.input-field {
     gap: 20px;
   }
 
-  /* 
+
   .contact-card .card-icon {
-    padding: 15px;
-  } */
+    padding: 11px 14px;
+  }
 
 }
 

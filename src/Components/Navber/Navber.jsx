@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-scroll'
+import './ToggleButton'
+import { FaBars } from 'react-icons/fa';
 
 const Navber = () => {
     return (
         <div>
             <header className="header" data-header>
                 <div className="container">
-
                     
                     <Link to="home" spy={true} smooth={true} duration={700} ><a className="logo" data-aos="zoom-in">AdsExpertPro</a></Link>
 
@@ -45,8 +46,8 @@ const Navber = () => {
                     </nav>
 
                     <button className="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
-                        <ion-icon name="menu-outline" className="open"></ion-icon>
-                        <ion-icon name="close-outline" className="close"></ion-icon>
+                        <FaBars name="menu-outline" className="open"></FaBars>
+                        <FaBars name="close-outline" className="close"></FaBars>
                     </button>
 
                 </div>
