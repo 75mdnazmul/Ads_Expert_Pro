@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-scroll'
 import './ToggleButton'
-import { FaBars } from 'react-icons/fa';
+import { FaArrowUp, FaBars } from 'react-icons/fa';
 
 const Navber = () => {
     return (
         <div>
             <header className="header" data-header>
                 <div className="container">
-                    
-                    <Link to="home" spy={true} smooth={true} duration={700} ><a className="logo" data-aos="zoom-in">AdsExpertPro</a></Link>
+
+                    <Link to="home" spy={true} smooth={true} duration={700} ><img src="Ads-Expert-Pro-logo.webp" alt="" className="logo" data-aos="zoom-in" /></Link>
 
                     <nav className="navbar container" data-navbar>
                         <ul className="navbar-list">
@@ -52,6 +52,11 @@ const Navber = () => {
 
                 </div>
             </header>
+            {/* =========================== BACK TO TOP ==================================*/}
+
+            <a href="#top" aria-label="back to top" data-back-top-btn className="back-top-btn">
+                <span><FaArrowUp name="chevron-up" aria-hidden="true"></FaArrowUp></span>
+            </a>
 
         </div>
     );
